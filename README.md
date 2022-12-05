@@ -5,8 +5,6 @@
 ## Topics
 - [Get Started](#getting-started)
 - [Starting the Project](#starting-the-project)
-- [Using axios](#using-axios)
-- [Deploying on Netlify](#deploying-on-netlify)
 ___
 ## Getting Started
 ### Use Template
@@ -30,33 +28,6 @@ ___
 <img width="510" alt="Screen Shot 2022-07-09 at 11 29 54 AM" src="https://user-images.githubusercontent.com/31781724/178114566-b2a67164-a604-4e10-9430-4c3054e2d8ab.png">
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-### Using Axios
-> For every file you will need to make an XHR request in, you will need to require Axios
-```js
-import axios from 'axios';
-
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
-
-### Deploying on Netlify
-Netlify will automatically detect your project and prepopulate the settings, but should something go wrong and it does not, here are the commands:
-
-- Build Command: `npm run build`
-- Publish directory: `.next`
-
-#### Additional Steps to Take on Netlify
-- Add Environmental Variables
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
         
 ## Learn More about Next.js
 To learn more about Next.js, take a look at the following resources:
